@@ -1,0 +1,2 @@
+ilario > test.txt
+echo ilario
