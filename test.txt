@@ -1,2 +1,1 @@
-ilario > test.txt
-echo ilario
+ilario
