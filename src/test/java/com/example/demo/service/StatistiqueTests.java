@@ -13,5 +13,5 @@ public class StatistiqueTests {
 
     @MockBean
     StatistiqueImpl statistiqueImpl;
-//jgzuiagfyagfa
+
 }
