@@ -14,4 +14,11 @@ public class StatistiqueTests {
     @MockBean
     StatistiqueImpl statistiqueImpl;
 
+
+
+    public void avecMockito() throws Exception{
+        StatistiqueImpl uneStats = Mockito.mock(StatistiqueImpl.class);
+        doThrow(Exception.class).when(uneStats).prixMoyen();
+    }
+
 }
