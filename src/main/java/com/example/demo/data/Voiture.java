@@ -1,6 +1,7 @@
 package com.example.demo.data;
 
 public class Voiture {
+    
 
     String marque;
     int prix;
