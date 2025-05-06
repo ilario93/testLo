@@ -26,7 +26,7 @@ public class StatistiqueTests {
         when(uneVoiture.getPrix()).thenReturn(1000);
         uneStats.ajouter(uneVoiture);
         Echantillon e = uneStats.prixMoyen();
-        assertEquals(1,1000);
+        assertEquals(e.getPrixMoyen(),1000);
     }
 
 }
