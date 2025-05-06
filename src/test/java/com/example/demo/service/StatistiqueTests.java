@@ -17,11 +17,15 @@ public class StatistiqueTests {
 
 
     public void avecMockito() throws Exception{
-        StatistiqueImpl uneStats = Mockito.mock(StatistiqueImpl.class);
+       
+        StatistiqueImpl uneStats = new StatistiqueImpl();
         Voiture uneVoiture = Mockito.mock(Voiture.class);
-        Echantillon unEch = Mockito.mock(Echantillon.class);
+        
 
-        doThrow(Exception.class).when(uneStats).prixMoyen();
+        doNothing().when(uneVoiture).getPrix().thenReturn(1000);
+        uneStats.ajouter(uneVoiture);
+        Echantillon e = uneStats.prixMoyen();
+        assertEquals(1,1000);
     }
 
 }
