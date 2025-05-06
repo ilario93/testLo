@@ -10,7 +10,7 @@ public class VoitureTest {
     @Test
     void creerVoiture(){
 
-         // Test du constructeur par défaut
+        
     @Test
     void testConstructorDefault() {
         assertNotNull(voiture, "La voiture ne doit pas être null");

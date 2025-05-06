@@ -18,6 +18,9 @@ public class StatistiqueTests {
 
     public void avecMockito() throws Exception{
         StatistiqueImpl uneStats = Mockito.mock(StatistiqueImpl.class);
+        Voiture uneVoiture = Mockito.mock(Voiture.class);
+        Echantillon unEch = Mockito.mock(Echantillon.class);
+
         doThrow(Exception.class).when(uneStats).prixMoyen();
     }
 
