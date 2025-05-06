@@ -1,5 +1,6 @@
 package com.example.demo.service;
 
+import static org.junit.jupiter.api.Assertions.assertEquals;
 import com.example.demo.data.Voiture;
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
@@ -19,7 +20,7 @@ public class StatistiqueTests {
     public void avecMockito() throws Exception{
        
         StatistiqueImpl uneStats = new StatistiqueImpl();
-        Voiture uneVoiture = Mockito.mock(Voiture.class);
+        Voiture uneVoiture = mock(Voiture.class);
         
 
         doNothing().when(uneVoiture).getPrix().thenReturn(1000);
