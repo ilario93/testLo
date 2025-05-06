@@ -23,7 +23,7 @@ public class StatistiqueTests {
         Voiture uneVoiture = mock(Voiture.class);
         
 
-        doNothing().when(uneVoiture).getPrix().thenReturn(1000);
+        when(uneVoiture.getPrix()).thenReturn(1000);
         uneStats.ajouter(uneVoiture);
         Echantillon e = uneStats.prixMoyen();
         assertEquals(1,1000);
