@@ -66,3 +66,4 @@ class WebTests {
 		.andReturn();
 
 }
+}
