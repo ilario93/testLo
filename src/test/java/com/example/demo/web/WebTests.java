@@ -58,7 +58,7 @@ class WebTests {
 			.andReturn();
 	}
 
-	public void testGetStatistiquesWithoutCar() throwsException {
+	public void testGetStatistiquesWithoutCar() throws Exception {
 	when(statistiqueImpl.prixMoyen()).thenThrow(new ArithmeticException()); 
 	mockMvc.perform(get("/statistique"))
 		.andDo(print())
